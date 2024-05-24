@@ -1,4 +1,4 @@
-from sets_categories_data import (ALCOHOLS)
+from sets_categories_data import ALCOHOLS
 
 
 def clean_ingredients(dish_name, dish_ingredients):
@@ -10,7 +10,7 @@ def clean_ingredients(dish_name, dish_ingredients):
 
 def check_drinks(drink_name, drink_ingredients):
 
-    alcohols = {}
+    alcohols = ALCOHOLS 
 
     ingredients = set(drink_ingredientes)
 
