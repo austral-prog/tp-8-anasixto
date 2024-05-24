@@ -13,12 +13,13 @@ def convert_coordinate(coordinate):
 
 def create_record(azara_record, rui_record):
 
-    treasure, treasure_coordinate = treasure_pair
-    location, location_coordinate, quadrant = location_record
+    treasure_coordinate = get_coordinate(azara_record)
+    location_coordinate = get_coordinate(rui_record)
 
-    formated_treasure_coordinate = convert_coordinate(treasure_coordinate)
+    if convert_coordinate(treasure_coordinate) == location_coordinate:
+        return azara_record + rui_record
 
-    if formated_treasure_coordinate == location_coordinate:
-        return treasure, tresure_coordinate, location, location_coordinate, quadrant
     else:
         return "not a match"
+
+    
