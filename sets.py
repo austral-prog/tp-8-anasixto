@@ -14,5 +14,10 @@ def check_drinks(drink_name, drink_ingredients):
 
     ingredients = set(drink_ingredientes)
 
-    return
+    if ingredientes in alcohols:
 
+        return drink_name + "Cocktail"
+
+    else:
+
+        return drink_name + "Mocktail"
