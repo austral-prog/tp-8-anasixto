@@ -12,7 +12,7 @@ def check_drinks(drink_name, drink_ingredients):
 
     alcohols = ALCOHOLS 
 
-    ingredients = set(drink_ingredientes)
+    ingredients = set(drink_ingredients)
 
     interseccion = ingredients.intersection(alcohols)
 
