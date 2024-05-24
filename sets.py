@@ -14,10 +14,12 @@ def check_drinks(drink_name, drink_ingredients):
 
     ingredients = set(drink_ingredientes)
 
-    if ingredientes in alcohols:
+    interseccion = ingredients.intersection(alcohols)
 
-        return drink_name + "Cocktail"
+    if len(interseccion) == 0:
+
+        return f"{drink_name} Mocktail"
 
     else:
 
-        return drink_name + "Mocktail"
+        return f"{drink_name} Cocktail"
