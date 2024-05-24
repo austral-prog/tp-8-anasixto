@@ -5,7 +5,7 @@ def clean_ingredients(dish_name, dish_ingredients):
 
     ingredients = set(dish_ingredients)
 
-        return (dish_name, dish_ingredients)
+        return (dish_name, ingredients)
 
 
 def check_drinks(drink_name, drink_ingredients):
